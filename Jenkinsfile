@@ -29,6 +29,7 @@ printenv | sort
 git config --global user.name "easy-jenkins"
 git config --global user.email "$(whoami)@$(hostname)"
 
+export ANDROID_HOME=/opt/android-sdk-linux
 export JAVA_HOME=
 chmod a+x gradlew
 

@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'jacekmarchwicki/android:java7-8-r25'
+      image 'gmacario/android-devenv'
     }
     
   }

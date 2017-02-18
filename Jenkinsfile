@@ -1,15 +1,15 @@
 pipeline {
   agent {
     docker {
-      image 'gmacario/build-yocto'
+      image 'gmacario/wtfapp-devenv'
     }
     
   }
   stages {
     stage('Checkout') {
       steps {
-        echo 'Checkout stage'
-        git(url: 'https://github.com/gmacario/genivi-dev-platform', branch: 'master', changelog: true)
+        sh 'pwd'
+        sh 'ls -la'  
       }
     }
     stage('Build') {
@@ -27,17 +27,9 @@ printenv | sort
 git config --global user.name "easy-jenkins"
 git config --global user.email "$(whoami)@$(hostname)"
 
-# Configure the build
-source init.sh qemux86-64
-
-# Prevent error "Do not use Bitbake as root"
-[ $(whoami) = "root" ] && touch conf/sanity.conf
-
-# Perform the actual build
-bitbake quilt-native
-
-# bitbake genivi-dev-platform
-# TODO: bitbake genivi-dev-platform-sdk
+export JAVA_HOME=
+chmod a+x gradlew
+./gradlew
 
 # EOF'''
       }

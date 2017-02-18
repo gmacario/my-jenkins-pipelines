@@ -9,7 +9,9 @@ pipeline {
     stage('Checkout') {
       steps {
         sh 'pwd'
-        sh 'ls -la'  
+        git 'https://github.com/gmacario/colorcode'
+        pwd()
+        sh 'ls -la'
       }
     }
     stage('Build') {

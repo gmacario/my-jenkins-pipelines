@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'jacekmarchwicki/android:ubuntu-16-04-java7-8'
+      image 'jacekmarchwicki/android:java7-8-r25'
     }
     
   }
@@ -41,7 +41,7 @@ echo -e "\n84831b9409646a918e30573bab4c9c91346d8abd" > "/opt/android-sdk-linux/l
 echo -e "\nd975f751698a77b662f1254ddbeed3901e976f5a" > "/opt/android-sdk-linux/licenses/intel-android-extra-license"
 
 ./gradlew --help
-./gradlew --parallel --stacktrace --no-daemon build 
+./gradlew --stacktrace --no-daemon build 
 
 ./gradlew --info
 ./gradlew --stacktrace

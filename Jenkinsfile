@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'gmacario/wtfapp-devenv'
+      image 'gmacario/android-devenv'
     }
     
   }

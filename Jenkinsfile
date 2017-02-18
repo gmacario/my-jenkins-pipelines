@@ -1,15 +1,44 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+      image 'gmacario/build-yocto'
+    }
+    
+  }
   stages {
     stage('Checkout') {
       steps {
-        echo 'hello'
+        echo 'Checkout stage'
         git(url: 'https://github.com/gmacario/genivi-dev-platform', branch: 'master', changelog: true)
       }
     }
     stage('Build') {
       steps {
         echo 'hello'
+        sh '''#!/bin/bash -xe
+
+# DEBUG
+id
+pwd
+ls -la
+printenv | sort
+
+# Configure git
+git config --global user.name "easy-jenkins"
+git config --global user.email "$(whoami)@$(hostname)"
+
+# Configure the build
+source init.sh qemux86-64
+
+# Prevent error "Do not use Bitbake as root"
+[ $(whoami) = "root" ] && touch conf/sanity.conf
+
+# Perform the actual build
+bitbake genivi-dev-platform
+
+# TODO: bitbake genivi-dev-platform-sdk
+
+# EOF'''
       }
     }
     stage('Test') {

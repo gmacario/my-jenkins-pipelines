@@ -31,7 +31,10 @@ git config --global user.email "$(whoami)@$(hostname)"
 
 export JAVA_HOME=
 chmod a+x gradlew
-./gradlew
+
+./gradlew --info
+./gradlew --stacktrace
+#./gradlew
 
 # EOF'''
       }

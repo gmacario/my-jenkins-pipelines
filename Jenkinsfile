@@ -34,8 +34,9 @@ source init.sh qemux86-64
 [ $(whoami) = "root" ] && touch conf/sanity.conf
 
 # Perform the actual build
-bitbake genivi-dev-platform
+bitbake quilt-native
 
+# bitbake genivi-dev-platform
 # TODO: bitbake genivi-dev-platform-sdk
 
 # EOF'''

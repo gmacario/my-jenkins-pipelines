@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'gmacario/android-devenv:feat-rebase-appunite'
+      image 'gmacario/android-devenv'
     }
     
   }

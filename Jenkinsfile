@@ -11,7 +11,7 @@ pipeline {
     stage('Checkout') {
       steps {
         echo 'Checkout stage'
-        git(url: 'https://github.com/GENIVI/genivi-dev-platform', branch: 'master', changelog: true)
+        git(url: 'https://github.com/gmacario/genivi-dev-platform', branch: 'dev-gmacario1', changelog: true)
       }
     }
     stage('Build') {

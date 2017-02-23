@@ -2,6 +2,14 @@
 
 Gradually accumulating more over time - one on each branch!
 
+### System Requirements
+
+* [Jenkins v2.32](https://jenkins.io/) or greater with the following installed plugins:
+  - [Blue Ocean Plugin v1.0.0-b23](https://wiki.jenkins-ci.org/display/JENKINS/Blue+Ocean+Plugin)
+  - [Pipeline Multibranch Plugin v2.12](https://wiki.jenkins-ci.org/display/JENKINS/Pipeline+Multibranch+Plugin)
+  - **NOTE**: You may use [easy-jenkins](https://github.com/gmacario/easy-jenkins) to install all the prerequisites
+* Lot of time, network bandwidth and disk space...
+
 ### Installing in a Jenkins MultiBranch pipeline
 
 Jenkins: Manage Jenkins > Manage Nodes > master > Configure

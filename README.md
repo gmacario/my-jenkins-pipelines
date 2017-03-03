@@ -29,3 +29,9 @@ then click **OK** and configure job:
   - Project Repository: `https://github.com/gmacario/my-jenkins-pipelines`
 
 then click **Save**.
+
+### See also
+
+* [Declarative Pipeline Quick Reference](https://www.cloudbees.com/sites/default/files/declarative-pipeline-refcard.pdf) (PDF, 2 pages)
+
+<!-- EOF -->

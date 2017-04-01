@@ -35,9 +35,9 @@ chmod a+x gradlew
 ./gradlew --help
 ./gradlew --stacktrace --no-daemon build 
 
-./gradlew --info
-./gradlew --stacktrace
-#./gradlew
+# ./gradlew --info
+# ./gradlew --stacktrace
+# ./gradlew
 
 # EOF'''
       }
@@ -46,11 +46,11 @@ chmod a+x gradlew
       steps {
         parallel(
           "Chrome": {
-            echo 'testing in chrome'
+            echo 'TODO: Testing in Chrome'
             
           },
           "Firefox": {
-            echo 'testing in firefox'
+            echo 'TODO: Testing in Firefox'
             
           }
         )
@@ -58,7 +58,9 @@ chmod a+x gradlew
     }
     stage('Deploy') {
       steps {
-        echo 'deploying'
+        echo 'TODO: Deploying'
+        sh 'pwd'
+        sh 'ls -la'
       }
     }
   }

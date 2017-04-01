@@ -66,7 +66,7 @@ chmod a+x gradlew
         sh 'pwd'
         sh 'ls -la'
         sh 'ls -la build/'
-        sh 'ls -la build/outputs/'
+        sh 'ls -la build/generated/'
       }
     }
   }

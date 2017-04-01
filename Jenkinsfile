@@ -35,9 +35,13 @@ chmod a+x gradlew
 ./gradlew --help
 ./gradlew --stacktrace --no-daemon build 
 
-./gradlew --info
-./gradlew --stacktrace
-#./gradlew
+# ./gradlew --info
+# ./gradlew --stacktrace
+# ./gradlew
+
+# Build a debug APK
+# See https://developer.android.com/studio/build/building-cmdline.html#DebugMode
+./gradlew assembleDebug
 
 # EOF'''
       }
@@ -46,11 +50,11 @@ chmod a+x gradlew
       steps {
         parallel(
           "Chrome": {
-            echo 'testing in chrome'
+            echo 'TODO: Testing in Chrome'
             
           },
           "Firefox": {
-            echo 'testing in firefox'
+            echo 'TODO: Testing in Firefox'
             
           }
         )
@@ -58,7 +62,11 @@ chmod a+x gradlew
     }
     stage('Deploy') {
       steps {
-        echo 'deploying'
+        echo 'TODO: Deploying'
+        sh 'pwd'
+        sh 'ls -la'
+        sh 'ls -la build/'
+        sh 'ls -la build/generated/'
       }
     }
   }

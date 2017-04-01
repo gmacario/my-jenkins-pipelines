@@ -1,9 +1,8 @@
 pipeline {
   agent {
     docker {
-      image 'gmacario/android-devenv'
+      image 'gmacario/android-devenv:latest'
     }
-    
   }
   stages {
     stage('Checkout') {
@@ -43,20 +42,18 @@ chmod a+x gradlew
 # See https://developer.android.com/studio/build/building-cmdline.html#DebugMode
 ./gradlew assembleDebug
 
-# EOF'''
-        archiveArtifacts
+# EOF
+'''
       }
     }
     stage('Test') {
       steps {
         parallel(
           "Chrome": {
-            echo 'TODO: Testing in Chrome'
-            
+            echo 'TODO: Testing in Chrome'       
           },
           "Firefox": {
             echo 'TODO: Testing in Firefox'
-            
           }
         )
       }

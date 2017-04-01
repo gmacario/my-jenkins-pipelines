@@ -61,6 +61,7 @@ chmod a+x gradlew
         echo 'TODO: Deploying'
         sh 'pwd'
         sh 'ls -la'
+        sh 'ls -la app/'
       }
     }
   }

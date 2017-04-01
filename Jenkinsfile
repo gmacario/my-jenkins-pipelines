@@ -1,9 +1,8 @@
 pipeline {
   agent {
     docker {
-      image 'gmacario/android-devenv'
+      image 'gmacario/android-devenv:latest'
     }
-    
   }
   stages {
     stage('Checkout') {
@@ -33,7 +32,9 @@ export JAVA_HOME=
 chmod a+x gradlew
 
 ./gradlew --help
-./gradlew --stacktrace --no-daemon build 
+./gradlew tasks
+
+./gradlew --stacktrace --no-daemon build
 
 # ./gradlew --info
 # ./gradlew --stacktrace
@@ -43,19 +44,18 @@ chmod a+x gradlew
 # See https://developer.android.com/studio/build/building-cmdline.html#DebugMode
 ./gradlew assembleDebug
 
-# EOF'''
+# EOF
+'''
       }
     }
     stage('Test') {
       steps {
         parallel(
           "Chrome": {
-            echo 'TODO: Testing in Chrome'
-            
+            echo 'TODO: Testing in Chrome'       
           },
           "Firefox": {
             echo 'TODO: Testing in Firefox'
-            
           }
         )
       }
@@ -65,9 +65,16 @@ chmod a+x gradlew
         echo 'TODO: Deploying'
         sh 'pwd'
         sh 'ls -la'
-        sh 'ls -la build/'
-        sh 'ls -la build/generated/'
+        // sh 'ls -la build/'
+        // sh 'ls -la build/generated/'
+        sh 'find . -name "*.apk" -ls || true'
       }
+    }
+  }
+  post {
+    always {
+       archive 'app/build/outputs/**/*.apk'
+       // junit 'build/reports/**/*.xml'
     }
   }
 }

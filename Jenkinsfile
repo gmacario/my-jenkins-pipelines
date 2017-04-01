@@ -32,7 +32,9 @@ export JAVA_HOME=
 chmod a+x gradlew
 
 ./gradlew --help
-./gradlew --stacktrace --no-daemon build 
+./gradlew tasks
+
+./gradlew --stacktrace --no-daemon build
 
 # ./gradlew --info
 # ./gradlew --stacktrace

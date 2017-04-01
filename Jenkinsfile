@@ -44,6 +44,7 @@ chmod a+x gradlew
 ./gradlew assembleDebug
 
 # EOF'''
+        archiveArtifacts
       }
     }
     stage('Test') {
@@ -68,6 +69,12 @@ chmod a+x gradlew
         sh 'ls -la build/'
         sh 'ls -la build/generated/'
       }
+    }
+  }
+  post {
+    always {
+       archive 'build/generated/**/*.apk'
+       // junit 'build/reports/**/*.xml'
     }
   }
 }

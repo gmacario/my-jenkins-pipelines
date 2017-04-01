@@ -67,6 +67,7 @@ chmod a+x gradlew
         sh 'ls -la'
         sh 'ls -la build/'
         sh 'ls -la build/generated/'
+        sh 'find . -name "*.apk" -ls || true'
       }
     }
   }

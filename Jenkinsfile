@@ -65,15 +65,15 @@ chmod a+x gradlew
         echo 'TODO: Deploying'
         sh 'pwd'
         sh 'ls -la'
-        sh 'ls -la build/'
-        sh 'ls -la build/generated/'
+        // sh 'ls -la build/'
+        // sh 'ls -la build/generated/'
         sh 'find . -name "*.apk" -ls || true'
       }
     }
   }
   post {
     always {
-       archive 'build/generated/**/*.apk'
+       archive 'app/build/outputs/**/*.apk'
        // junit 'build/reports/**/*.xml'
     }
   }

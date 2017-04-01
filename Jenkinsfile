@@ -39,6 +39,10 @@ chmod a+x gradlew
 # ./gradlew --stacktrace
 # ./gradlew
 
+# Build a debug APK
+# See https://developer.android.com/studio/build/building-cmdline.html#DebugMode
+./gradlew assembleDebug
+
 # EOF'''
       }
     }
@@ -61,7 +65,7 @@ chmod a+x gradlew
         echo 'TODO: Deploying'
         sh 'pwd'
         sh 'ls -la'
-        sh 'ls -la app/'
+        sh 'ls -la outputs/'
       }
     }
   }

@@ -33,6 +33,7 @@ then click **Save**.
 ### See also
 
 * [Pipeline as code](https://jenkins.io/doc/book/pipeline-as-code/)
+* [Pipeline Syntax Reference](https://jenkins.io/doc/book/pipeline/syntax/)
 * [Declarative Pipeline Quick Reference](https://www.cloudbees.com/sites/default/files/declarative-pipeline-refcard.pdf) (PDF, 2 pages)
 
 <!-- EOF -->

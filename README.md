@@ -1,4 +1,4 @@
-# Various Pipeline demos
+# Various Jenkins Pipeline demos
 
 Gradually accumulating more over time - one on each branch!
 
@@ -30,13 +30,16 @@ then click **OK** and configure job:
 
 then click **Save**.
 
-### Documentation on Jenkins Declarative Pipelines
+### Documentation on Declarative Pipelines
 
 * [Pipeline as code](https://jenkins.io/doc/book/pipeline-as-code/)
 * [Pipeline Syntax Reference](https://jenkins.io/doc/book/pipeline/syntax/)
 * [Pipeline Steps Reference](https://jenkins.io/doc/pipeline/steps/)
 * [Declarative Pipeline Quick Reference](https://www.cloudbees.com/sites/default/files/declarative-pipeline-refcard.pdf) (PDF, 2 pages)
-* <https://jenkins.io/blog/2017/02/03/declarative-pipeline-ga/>
-* <https://dzone.com/refcardz/continuous-delivery-with-jenkins-workflow>
+* [Declarative Pipeline Syntax 1.0 is now available](https://jenkins.io/blog/2017/02/03/declarative-pipeline-ga/) - jenkins.io blog, 2017-02-03
+
+#### Other resources about Jenkins Pipeline
+
+* [Continuous Delivery With Jenkins Workflow](https://dzone.com/refcardz/continuous-delivery-with-jenkins-workflow) - DZone Refcard #218
 
 <!-- EOF -->

@@ -30,11 +30,13 @@ then click **OK** and configure job:
 
 then click **Save**.
 
-### See also
+### Documentation on Jenkins Declarative Pipelines
 
 * [Pipeline as code](https://jenkins.io/doc/book/pipeline-as-code/)
 * [Pipeline Syntax Reference](https://jenkins.io/doc/book/pipeline/syntax/)
 * [Pipeline Steps Reference](https://jenkins.io/doc/pipeline/steps/)
 * [Declarative Pipeline Quick Reference](https://www.cloudbees.com/sites/default/files/declarative-pipeline-refcard.pdf) (PDF, 2 pages)
+* <https://jenkins.io/blog/2017/02/03/declarative-pipeline-ga/>
+* <https://dzone.com/refcardz/continuous-delivery-with-jenkins-workflow>
 
 <!-- EOF -->

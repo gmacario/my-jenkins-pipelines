@@ -40,6 +40,7 @@ then click **Save**.
 #### Blog posts on jenkins.io
 
 * [Declarative Pipeline: Notifications and Shared Libraries](https://jenkins.io/blog/2017/02/15/declarative-notifications/) - jenkins.io blog, 2017-02-15
+* [Declarative Pipeline: Publishing HTML Reports](https://jenkins.io/blog/2017/02/10/declarative-html-publisher/) - jenkins.io blog, 2017-02-10
 * [Declarative Pipeline Syntax 1.0 is now available](https://jenkins.io/blog/2017/02/03/declarative-pipeline-ga/) - jenkins.io blog, 2017-02-03
 
 #### Other links

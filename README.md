@@ -41,7 +41,7 @@ then click **Save**.
 
 * [Declarative Pipeline: Notifications and Shared Libraries](https://jenkins.io/blog/2017/02/15/declarative-notifications/) - jenkins.io blog, 2017-02-15
 * [Declarative Pipeline: Publishing HTML Reports](https://jenkins.io/blog/2017/02/10/declarative-html-publisher/) - jenkins.io blog, 2017-02-10
-* [Declarative Pipeline for Maven Projects] - jenkins.io blog, 2017-02-07
+* [Declarative Pipeline for Maven Projects](https://jenkins.io/blog/2017/02/07/declarative-maven-project/) - jenkins.io blog, 2017-02-07
 * [Declarative Pipeline Syntax 1.0 is now available](https://jenkins.io/blog/2017/02/03/declarative-pipeline-ga/) - jenkins.io blog, 2017-02-03
 
 #### Other links

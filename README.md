@@ -13,8 +13,6 @@ Gradually accumulating more over time - one on each branch!
 
 ### Installing using Blue Ocean (NEW)
 
-# Install my-jenkins-pipelines with blueocean
-
 Jenkins: Manage Jenkins > Manage Nodes > master > Configure
 
 * Labels: `docker`

@@ -4,11 +4,51 @@ Gradually accumulating more over time - one on each branch!
 
 ### System Requirements
 
-* [Jenkins v2.32](https://jenkins.io/) or greater with the following installed plugins:
-  - [Blue Ocean Plugin v1.0.0-b23](https://wiki.jenkins-ci.org/display/JENKINS/Blue+Ocean+Plugin)
-  - [Pipeline Multibranch Plugin v2.12](https://wiki.jenkins-ci.org/display/JENKINS/Pipeline+Multibranch+Plugin)
+* [Jenkins 2.46](https://jenkins.io/) or greater with the following installed plugins:
+  - [Blue Ocean Plugin 1.0.0](https://wiki.jenkins-ci.org/display/JENKINS/Blue+Ocean+Plugin)
+  - [Pipeline Multibranch Plugin 2.14](https://wiki.jenkins-ci.org/display/JENKINS/Pipeline+Multibranch+Plugin)
   - **NOTE**: You may use [easy-jenkins](https://github.com/gmacario/easy-jenkins) to install all the prerequisites
 * Lot of time, network bandwidth and disk space...
+
+
+### Installing using Blue Ocean (NEW)
+
+# Install my-jenkins-pipelines with blueocean
+
+Jenkins: Manage Jenkins > Manage Nodes > master > Configure
+
+* Labels: `docker`
+
+then click **Save**.
+
+Jenkins: Open Blue Ocean
+
+Click **Create a new Pipeline**
+
+* Where do you store your code? **Github**
+
+* Connect to Github
+  > Jenkins needs an access key to authorize itself with Github.
+  > Create an access key here.
+  
+* Click on link **Create an access key here**
+  
+* New personal access token
+  - Token description: `easy-jenkins on ies-genbld01-ub16`
+  - Select scopes: "repo, read:user, user:email", then click **Generate token**
+  
+* Copy your personal access token
+
+* Paste access token to blueocean "Create Pipeline" page, then click **Connect**
+
+* Which organization does the repository belong to? **gmacario**
+
+* Create a signle Pipeline or discover all Pipelines: **New Pipeline**
+
+* Choose a repository: **my-jenkins-pipelines**, then click **Create Pipeline**
+
+* Wait until the pipeline becomes green
+
 
 ### Installing in a Jenkins MultiBranch pipeline
 
@@ -29,6 +69,7 @@ then click **OK** and configure job:
   - Project Repository: `https://github.com/gmacario/my-jenkins-pipelines`
 
 then click **Save**.
+
 
 ### Documentation on Declarative Pipeline
 

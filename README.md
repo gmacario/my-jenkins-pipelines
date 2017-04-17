@@ -83,6 +83,11 @@ then click **Save**.
 * [Declarative Pipeline for Maven Projects](https://jenkins.io/blog/2017/02/07/declarative-maven-project/) - jenkins.io blog, 2017-02-07
 * [Declarative Pipeline Syntax 1.0 is now available](https://jenkins.io/blog/2017/02/03/declarative-pipeline-ga/) - jenkins.io blog, 2017-02-03
 
+#### Repositories with Jenkins Pipeline examples
+
+* <https://github.com/jenkinsci/pipeline-examples>
+* <https://github.com/abayer/misc-pipeline-demos>
+
 #### Other links
 
 * [Continuous Delivery With Jenkins Workflow](https://dzone.com/refcardz/continuous-delivery-with-jenkins-workflow) - DZone Refcard #218

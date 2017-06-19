@@ -32,6 +32,11 @@ git config --global user.email "$(whoami)@$(hostname)"
 # Configure the build
 source init.sh raspberrypi3
 
+# Workaround for "Please use a locale setting which supports utf-8."
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8 
+
 # Prevent error "Do not use Bitbake as root"
 [ $(whoami) = "root" ] && touch conf/sanity.conf
 

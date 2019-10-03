@@ -3,6 +3,7 @@
 pipeline {
   agent {
     docker {
+      label 'docker'
       image 'gmacario/build-yocto'
     }
     
